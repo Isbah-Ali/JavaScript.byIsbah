@@ -30,3 +30,6 @@ console.log(IsDate.getDay());
 console.log(IsDate.getMonth()); // will return the same way 0= January, 1= Feb and so on
 //  for the correct month and no confusion for client or user:
 console.log(IsDate.getMonth() +1); // Now January = 1
+IsDate.toLocaleString("default". {
+    day: Monday
+})
