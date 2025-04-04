@@ -41,3 +41,5 @@ console.log("After Slice: ", myarr) // OUTPUT After Slice:  [ 2, 4, 6, 8, 15 ]
 // splice operation manipulates the original array
 console.log(myarr.splice(1,3)) // OUTPUT: [ 4, 6, 8 ]
 console.log("After Splice: ", myarr) // OUTPUT: After Splice:  [ 2, 15 ]
+
+
