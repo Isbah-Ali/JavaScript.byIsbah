@@ -2,7 +2,7 @@
   /*The Singleton pattern in JavaScript ensures that a class has only one instance and provides a 
     global access point to that instance.  This is useful for managing shared resources or state across an application.*/
 
-    // Object Literals
+    // Object Literals:
 
     // Creating an object
     const obj = {} // These curly braces is an object atm its empty but it contains keys and values
@@ -40,6 +40,6 @@ console.log(JSuser.greeting())
 
 JSuser.greeting_name = function(){
     console.log(`Hello ${this.name}`) // using string interpolation to print hello with name 
-  // this is used to refer the variable f the same object 
+  // keyword: "this" is used to refer the variable for the same object 
   }
 JSuser.greeting_name();
