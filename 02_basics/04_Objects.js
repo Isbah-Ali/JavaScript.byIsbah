@@ -87,3 +87,4 @@ console.log(obj4.hasOwnProperty(9)) // OUTPUT: false key 9 doesn't exist
     {},
     {}
     ]
+console.log("THE END")
