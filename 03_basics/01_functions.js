@@ -12,3 +12,5 @@ multiply(3,6)
 
 // JavaScript donot checks datatypes we have to do  it manually
 //  with 3 + null only 3 will be printed
+
+//
