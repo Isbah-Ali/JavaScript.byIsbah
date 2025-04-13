@@ -14,3 +14,9 @@ multiply(3,6)
 //  with 3 + null only 3 will be printed
 
 //
+
+function logged_in_msg(username){
+           return `${username} just logged in`
+}
+
+console.log(logged_in_msg("Isbah"))    // OUTPUT: Isbah jsut logged in
