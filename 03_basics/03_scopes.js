@@ -22,9 +22,9 @@ function addone(num){
   return num +1;
 }
 
-addtwo(6)  
-// this wont run the below function because the function is right now an expression as it is stored as a variable  
-// it's HOISTING
+addtwo(6)   /* this wont run the below function 
+ because the function is right now an expression as it is stored as a variable  */
+// it's called HOISTING
 const addtwo = function (){
   return num+2;
 }
