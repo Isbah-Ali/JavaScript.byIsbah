@@ -1,0 +1,33 @@
+function processProducts(products, minimum_Price = 14) {
+  
+  const filtered = products.filter(product => product.price > minimum_Price);
+  const transformed = filtered.map(({ name, price, category }) => ({
+    name,
+    price,
+    formatName: name.toUpperCase(),
+    formatCategory: category.toUpperCase()
+  }));
+  
+  const grouped = transformed.reduce((acc, product) => {
+    const category = product.formatCategory;
+    if (!acc[category]) {
+      acc[category] = [];
+    }
+    acc[category].push(product);
+    return acc;
+  }, {});
+
+  const jsonString = JSON.stringify(grouped);
+  const finalResult = JSON.parse(jsonString);
+  
+  return finalResult;
+}
+
+const result = processProducts(products);
+
+console.log(JSON.stringify(result, null, 2));
+
+
+
+
+
